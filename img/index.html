@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROFIT</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- CSS Faylini Ulash -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+
+        <span><i class="fa-solid fa-location-dot"></i> Guliston sh., 3-mavze, Bozorcha</span>
+        <span><i class="fa-solid fa-phone"></i> +998 95 341 95 00</span>
+      </div>
+      <div class="top-features">
+        <span><i class="fa-solid fa-truck-fast"></i> O'zbekiston bo'ylab yetkazib berish</span>
+        <span><i class="fa-solid fa-shield-halved"></i> 100% Sifat Kafolati</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-bolt logo-icon"></i>
+        <span>PROFIT</span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-box">
+        <input type="text" placeholder="Mahsulotlarni qidiring (masalan: Protein, Gantel...)" id="searchInput">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <!-- User Actions -->
+      <div class="header-actions">
+        <a href="#contacts" class="action-btn">
+          <i class="fa-solid fa-headset"></i>
+          <span>Aloqa</span>
+        </a>
+        <div class="action-btn cart-btn" id="openCartBtn">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Savat</span>
+          <span class="badge" id="cartBadge">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="container nav-container">
+      <button class="nav-link active"><i class="fa-solid fa-border-all"></i> Barcha Mahsulotlar</button>
+      <button class="nav-link"><i class="fa-solid fa-capsules"></i> Vitaminlar</button>
+      <button class="nav-link"><i class="fa-solid fa-flask"></i> Sport Ozuqalari</button>
+      <button class="nav-link"><i class="fa-solid fa-dumbbell"></i> Sport Jihozlari</button>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-subtitle"><i class="fa-solid fa-fire"></i> Eng Zamonaviy va Sifatli</span>
+      <h1>PROFESSIONAL SPORT VA SOG'LIQ MAHSULOTLARI</h1>
+      <p>Sizning maqsadlaringiz va yuqori natijalaringiz uchun eng sara vitaminlar, qo'shimchalar va jihozlar!</p>
+      <div class="hero-btns">
+        <a href="#catalog" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i> Xarid qilishni boshlash</a>
+        <a href="#contacts" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Biz bilan aloqa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Catalog -->
+  <main class="container catalog-section" id="catalog">
+    <div class="section-header">
+      <div>
+        <h2>Bizning Mahsulotlar</h2>
+        <p>Sifatli va kafolatlangan sport tovarlari katalogi</p>
+      </div>
+    </div>
+
+    <!-- Grid Products -->
+    <div class="products-grid">
+
+      <!-- Product Card 1 -->
+      <div class="product-card" data-id="1" data-name="Opti-Men Multivitamin (90 kapsula)" data-price="280000">
+        <div class="card-image">
+          <span class="tag tag-vitamin">Vitaminlar</span>
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=400" alt="Opti-Men">
+        </div>
+        <div class="card-body">
+          <h3 class="product-title">Opti-Men Multivitamin (90 kapsula)</h3>
+          <p class="product-desc">Erkaklar uchun zaruriy multivitamin va mineral majmuasi.</p>
+          <div class="card-footer">
+            <div class="price">280,000 <span>UZS</span></div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Olmoq</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card" data-id="2" data-name="100% Whey Gold Standard (1 kg)" data-price="450000">
+        <div class="card-image">
+          <span class="tag tag-supplement">Sport Ozuqalari</span>
+          <img src="https://images.unsplash.com/photo-1579722821273-0f6c7d44362f?q=80&w=400" alt="Whey Protein">
+        </div>
+        <div class="card-body">
+          <h3 class="product-title">100% Whey Gold Standard (1 kg)</h3>
+          <p class="product-desc">Mushaklar o'sishi va tez tiklanishi uchun oliy navli protein.</p>
+          <div class="card-footer">
+            <div class="price">450,000 <span>UZS</span></div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Olmoq</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card" data-id="3" data-name="Creatine Monohydrate (300g)" data-price="190000">
+        <div class="card-image">
+          <span class="tag tag-supplement">Sport Ozuqalari</span>
+          <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?q=80&w=400" alt="Creatine">
+        </div>
+        <div class="card-body">
+          <h3 class="product-title">Creatine Monohydrate (300g)</h3>
+          <p class="product-desc">Kuch va mushak hajmini oshirish uchun toza kreatin monogidrat.</p>
+          <div class="card-footer">
+            <div class="price">190,000 <span>UZS</span></div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Olmoq</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card" data-id="4" data-name="Nabor Gantellar (2 x 15 kg)" data-price="520000">
+        <div class="card-image">
+          <span class="tag tag-equipment">Sport Jihozlari</span>
+          <img src="https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?q=80&w=400" alt="Gantel">
+        </div>
+        <div class="card-body">
+          <h3 class="product-title">Nabor Gantellar (2 x 15 kg)</h3>
+          <p class="product-desc">Uy va zal uchun qulay, rezinalangan po'lat gantellar to'plami.</p>
+          <div class="card-footer">
+            <div class="price">520,000 <span>UZS</span></div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Olmoq</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card" data-id="5" data-name="Turnik & Brus 3-in-1" data-price="380000">
+        <div class="card-image">
+          <span class="tag tag-equipment">Sport Jihozlari</span>
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=400" alt="Turnik">
+        </div>
+        <div class="card-body">
+          <h3 class="product-title">Turnik & Brus 3-in-1</h3>
+          <p class="product-desc">Devorga o'rnatiladigan mustahkam va ko'p funksiyali turnik.</p>
+          <div class="card-footer">
+            <div class="price">380,000 <span>UZS</span></div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Olmoq</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card" data-id="6" data-name="Boks Qo'lqoplari Everlast 12oz" data-price="310000">
+        <div class="card-image">
+          <span class="tag tag-equipment">Sport Jihozlari</span>
+          <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=400" alt="Boks">
+        </div>
+        <div class="card-body">
+          <h3 class="product-title">Boks Qo'lqoplari Everlast 12oz</h3>
+          <p class="product-desc">Sifatli charmdan tayyorlangan professional boks qo'lqoplari.</p>
+          <div class="card-footer">
+            <div class="price">310,000 <span>UZS</span></div>
+            <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Olmoq</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SAVAT MODAL OYNASI (DRAWER) -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-cart-shopping"></i> Xarid Savatchasi</h3>
+      <button class="close-cart-btn" id="closeCartBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer">
+      <!-- Savatdagi mahsulotlar shu yerga chiqadi -->
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Jami summa:</span>
+        <strong id="cartTotalPrice">0 UZS</strong>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn"><i class="fa-solid fa-check"></i> Buyurtma berish</button>
+    </div>
+  </div>
+
+  <!-- Contact & Location Section -->
+  <section class="contacts-section" id="contacts">
+    <div class="container">
+      <div class="contacts-wrapper">
+        <div class="contact-info">
+          <h2>Biz bilan Bog'laning</h2>
+          <p>Savollaringiz bormi? Do'konimizga tashrif buyuring yoki telefon orqali ma'lumot oling.</p>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Manzilimiz:</h4>
+              <p>Guliston sh., 3-mavze, Bozorcha</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Telefon raqam:</h4>
+              <p>+998 95 341 95 00</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Ish vaqti:</h4>
+              <p>Har kuni: 08:00 — 21:00 (Haftasiga 7 kun)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <h3>Do'kon Joylashuvi</h3>
+          <div class="map-placeholder">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>Guliston sh., 3-mavze, Bozorcha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-bolt"></i> PROFIT
+      </div>
+      <p>&copy; 2026 PROFIT Sport Store. Barcha huquqlar himoyalangan.</p>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Faylini Ulash -->
+  <script src="bo.js"></script>
+</body>
+</html>
